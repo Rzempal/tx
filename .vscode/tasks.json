@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Git: PR + Merge to Main",
+            "type": "shell",
+            "command": ".\\scripts\\run_merge_pr.bat",
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Deploy Template (Config needed)",
+            "type": "shell",
+            "command": ".\\scripts\\run_deploy.bat",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
